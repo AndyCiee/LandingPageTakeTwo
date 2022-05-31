@@ -33,9 +33,11 @@ ul li{
 } */
 div slideshow{
     max-width: 800px;
+    height: 600px;
     position: relative;
-    margin: auto;
+    margin: o;
 }
+
 div MeetUs{
     display: none;
 }
@@ -43,7 +45,11 @@ div fade{
     animation-name: fade;
     animation-duration: 2s;
 }
-
+.slideshow ul{
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
 div text{
     color: #ccc9dc;
     font-size: small;
@@ -54,13 +60,46 @@ div text{
     text-align: center;
 }
 div text1{
-    color: #ccc9dc;
-    font-size: 12px;
-    padding: 8px 12px;
+    inset: 0;
     position: absolute;
-    top: 0;
-}
+    flex: 33.33%;
 
+}
+.text1>img{
+    display: block;
+    width: 75%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.text[data-active]{
+    opacity: 1;
+}
+.button{
+    z-index: 2;
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 75%;
+    transform: 50%;
+    transform: rbga (255, 255,255, .5);
+    cursor: pointer;
+}
+.button:hover,
+.button:focus{
+    color: #324A5f;
+    background-color: rgba(0,0, 0, .2);
+}
+.button:focus{
+    outline: 1px solid black;
+}
+.button.prev{
+    left: 1rem;
+}
+.button.next{
+    right: 1rem;
+}
 form{
     background-color: #324A5f;
     width: auto;
