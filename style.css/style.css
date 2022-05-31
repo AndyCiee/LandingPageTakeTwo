@@ -1,0 +1,102 @@
+header{
+    background-color: #324A5f;
+    width: auto;
+    height: 175px;
+    padding: 75px;
+    text-align: center;
+    font-size: xx-large;
+}
+main #topnav{
+    background-color: #ccc9dc;
+    width: auto;
+    padding: 15px;
+    text-align: left;
+    font-size: x-large;
+}
+a{
+    text-decoration-color: #324A5f;
+}
+h1{
+    color:  #ccc9dc;
+}
+h4{
+    color: #ccc9dc;
+}
+ul li{
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    display: inline;
+}
+/* *, *::before, *::after{
+    box-sizing: border-box;
+} */
+div slideshow{
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+}
+div MeetUs{
+    display: none;
+}
+div fade{
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+div text{
+    color: #ccc9dc;
+    font-size: small;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+div text1{
+    color: #ccc9dc;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+form{
+    background-color: #324A5f;
+    width: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+input{
+    width: 35%;
+    height: 30px;
+}
+label{
+    color: azure;
+    font-size: large;
+}
+button{
+    background-color: #ccc9dc;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+footer{
+    padding: 20px;
+    width: auto;
+    background-color: #324A5f;
+    float: center;
+}
+ion-icon{
+    font-size: x-large;
+}
+b{
+    color: #ccc9dc;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
