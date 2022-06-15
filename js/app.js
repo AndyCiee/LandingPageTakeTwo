@@ -55,10 +55,36 @@
 */
 
 // build the nav
+function navbar__menu(){
+    const navs = document.querySelectorAll('.Navbar__menu')
+
+    navs.forEach(nav => nav.classList.toggle('Navbar__link'));
+}
+
+document. querySelector('.Navbar__Menu.menu__link')
+    .addEventListener('click', classList);
 
 
 // Add class 'active' to section when near top of viewport
+let slideIndex = 1;
+showSlides(slideIndex);
 
+//Next/previous controls
+function plusSlides(n){
+    showSlides(slideIndex += n);
+}
+
+//Thumbnail image controls
+function showSlides(){
+    let slides = document.getElementsByClassName("MeetTheTeam");
+    for (i = 0; i < slides.length; i++){
+        slides[i].getElementsByClassName.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides [slideIndex-1].getElementsByClassName.display = "block";
+    setTimeout(showSlides, 2000);
+}
 
 // Scroll to anchor ID using scrollTO event
 
